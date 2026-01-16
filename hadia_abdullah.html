@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hadia ❤️ Abdullah</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            overflow: hidden;
+            text-align: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffdde1, #ffb6c1);
+        }
+
+        /* 🔐 Password Screen */
+        #login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        input {
+            padding: 12px;
+            border-radius: 12px;
+            border: none;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        button {
+            padding: 12px 25px;
+            border-radius: 12px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            background: hotpink;
+            color: white;
+            margin-left: 10px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: deeppink;
+        }
+
+        /* ❤️ Main Content */
+        #main {
+            display: none;
+            width: 100%;
+            height: 100%;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* 🌟 Big center text */
+        #loveText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 100px;
+            font-weight: bold;
+            color: #ff1493;
+            text-shadow: 0 0 30px pink, 0 0 60px red;
+            animation: zoomBlink 2s infinite alternate;
+            pointer-events: none;
+        }
+
+        @keyframes zoomBlink {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+                text-shadow: 0 0 30px pink, 0 0 60px red;
+            }
+
+            50% {
+                transform: translate(-50%, -50%) scale(1.1);
+                opacity: 0.8;
+                text-shadow: 0 0 60px pink, 0 0 120px red;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+                text-shadow: 0 0 30px pink, 0 0 60px red;
+            }
+        }
+
+        /* 🥰 40 flirty lines */
+        #flirtyLines {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .line {
+            font-size: 25px;
+            margin: 5px;
+            color: #fff;
+            text-shadow: 0 0 5px pink, 0 0 10px red;
+            animation: floatText 60s linear infinite;
+            /* slower speed */
+        }
+
+        @keyframes floatText {
+            0% {
+                transform: translateY(1000px);
+            }
+
+            100% {
+                transform: translateY(-1000px);
+            }
+        }
+
+        /* 💖 Floating animations */
+        .heart,
+        .flower,
+        .ring,
+        .bouquet-float,
+        .butterfly {
+            position: absolute;
+            user-select: none;
+            pointer-events: none;
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-1000px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 🔐 Password -->
+    <div id="login">
+        <h2>Enter Password 💖</h2>
+        <input type="password" id="pass" placeholder="Type here">
+        <button onclick="check()">Enter</button>
+        <p id="msg" style="color:yellow;"></p>
+    </div>
+
+    <!-- ❤️ Main Content -->
+    <div id="main">
+        <!-- Big center text -->
+        <div id="loveText">Hadia ❤️ Abdullah</div>
+
+        <!-- 40 Flirty lines -->
+        <div id="flirtyLines">
+            <div class="line">You make my heart skip beats 🥰</div>
+            <div class="line">Every smile of yours drives me crazy 😍</div>
+            <div class="line">Your laugh is my favorite song 🎶</div>
+            <div class="line">I could get lost in your eyes forever 💖</div>
+            <div class="line">You are my sweetest addiction 🌸</div>
+            <div class="line">Every touch of yours is magic ✨</div>
+            <div class="line">My heart whispers your name all the time 💓</div>
+            <div class="line">I love the way you blush 😘</div>
+            <div class="line">You are my personal sunshine ☀️</div>
+            <div class="line">My favorite hobby is loving you 💕</div>
+            <div class="line">You make even ordinary days special 🌹</div>
+            <div class="line">I get butterflies every time I see you 🦋</div>
+            <div class="line">Your voice is my favorite melody 🎵</div>
+            <div class="line">I could stare at you for hours 😍</div>
+            <div class="line">Every thought of you makes me smile 😘</div>
+            <div class="line">You are my sweetest fantasy 💖</div>
+            <div class="line">Being with you feels like home 🏡</div>
+            <div class="line">I adore your every little habit 🌸</div>
+            <div class="line">You are my forever crush 💕</div>
+            <div class="line">Every heartbeat is yours 💓</div>
+            <div class="line">Your love is my favorite high ✨</div>
+            <div class="line">I can’t stop thinking about you 😍</div>
+            <div class="line">You make my world brighter 🌈</div>
+            <div class="line">I am hooked on your charm 🥰</div>
+            <div class="line">You are my ultimate guilty pleasure 💖</div>
+            <div class="line">I love teasing you 😏</div>
+            <div class="line">Every glance from you is heaven 😘</div>
+            <div class="line">You are my cutest obsession 🌸</div>
+            <div class="line">I can’t resist your smile 😍</div>
+            <div class="line">You are my dreamy reality 💕</div>
+            <div class="line">I get lost in your presence 💖</div>
+            <div class="line">You are my sweetest distraction 🥰</div>
+            <div class="line">I live to make you blush 😏</div>
+            <div class="line">Every moment with you is magic ✨</div>
+            <div class="line">You are my secret happiness 🌸</div>
+            <div class="line">I love the way you care 💓</div>
+            <div class="line">Your charm is unstoppable 💕</div>
+            <div class="line">I could write a thousand poems about you 💖</div>
+            <div class="line">You make love feel so real 😍</div>
+            <div class="line">Being yours is my favorite thing 🥰</div>
+        </div>
+
+        <!-- 🎵 Romantic Music -->
+        <audio id="music" autoplay loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        function check() {
+            let p = document.getElementById("pass").value;
+            if (p === "Hadiaabdullah") {
+                document.getElementById("login").style.display = "none";
+                document.getElementById("main").style.display = "block";
+                startAnimations();
+            } else {
+                document.getElementById("msg").innerText = "Sirf Hadia aur Abdullah ke liye hai 😌❤️";
+            }
+        }
+
+        /* Floating animations */
+        function startAnimations() {
+            for (let i = 0; i < 50; i++) {
+                let heart = document.createElement("div");
+                heart.className = "heart";
+                heart.innerText = "💖";
+                heart.style.left = Math.random() * window.innerWidth + "px";
+                heart.style.animation = `floatUp ${6 + Math.random() * 5}s linear infinite`; // slower
+                heart.style.fontSize = (15 + Math.random() * 30) + "px";
+                document.body.appendChild(heart);
+            }
+            for (let i = 0; i < 30; i++) {
+                let flower = document.createElement("div");
+                flower.className = "flower";
+                let flowers = ["🌸", "🌹", "🌺", "🌷", "🌼"];
+                flower.innerText = flowers[Math.floor(Math.random() * flowers.length)];
+                flower.style.left = Math.random() * window.innerWidth + "px";
+                flower.style.animation = `floatUp ${7 + Math.random() * 6}s linear infinite`; // slower
+                flower.style.fontSize = (20 + Math.random() * 30) + "px";
+                document.body.appendChild(flower);
+            }
+            for (let i = 0; i < 20; i++) {
+                let ring = document.createElement("div");
+                ring.className = "ring";
+                ring.innerText = "💍";
+                ring.style.left = Math.random() * window.innerWidth + "px";
+                ring.style.animation = `floatUp ${8 + Math.random() * 5}s linear infinite`; // slower
+                ring.style.fontSize = (20 + Math.random() * 30) + "px";
+                document.body.appendChild(ring);
+            }
+            for (let i = 0; i < 15; i++) {
+                let bouquet = document.createElement("div");
+                bouquet.className = "bouquet-float";
+                bouquet.innerText = "💐";
+                bouquet.style.left = Math.random() * window.innerWidth + "px";
+                bouquet.style.animation = `floatUp ${9 + Math.random() * 5}s linear infinite`; // slower
+                bouquet.style.fontSize = (25 + Math.random() * 30) + "px";
+                document.body.appendChild(bouquet);
+            }
+            for (let i = 0; i < 10; i++) {
+                let butterfly = document.createElement("div");
+                butterfly.className = "butterfly";
+                butterfly.innerText = "🦋";
+                butterfly.style.left = Math.random() * window.innerWidth + "px";
+                butterfly.style.animation = `floatUp ${10 + Math.random() * 5}s linear infinite`; // slower
+                butterfly.style.fontSize = (20 + Math.random() * 30) + "px";
+                document.body.appendChild(butterfly);
+            }
+        }
+    </script>
+</body>
+
+</html>
